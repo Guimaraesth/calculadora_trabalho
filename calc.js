@@ -15,7 +15,7 @@ var valor1 = [];
 var valor2 = [];
 var valor3 = [];
 var valor4 = [];
-var tela =document.getElementById('test1');
+var tela =document.getElementById('NumeroTela');
 
 function digAper(value){
  arrayy.push(value);
@@ -75,7 +75,7 @@ if(valor4 > 1) {
    valor3.shift();  
    valor4.shift();
  }
-   }console.log(valor1,valor2,valor3,valor4,tela)
+   }console.log(arrayy);
 
   
    
