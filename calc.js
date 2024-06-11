@@ -10,7 +10,7 @@ setInterval(()=>{
 }, 1000);
 
 }
-var digtela = [];
+var arrayy = [];
 var valor1 = [];
 var valor2 = [];
 var valor3 = [];
@@ -18,22 +18,22 @@ var valor4 = [];
 var tela =document.getElementById('NumeroTela');
 
 function digAper(value){
-   digtela.push(value);
- var total = digtela.reduce((total, numero) => total + numero, ) ;
+ arrayy.push(value);
+ var total = arrayy.reduce((total, numero) => total + numero, ) ;
  tela.value=total;
 }
 function operacao(value){
-   var total = digtela.reduce((total, numero) => total + numero, ) ;
+   var total = arrayy.reduce((total, numero) => total + numero, ) ;
     var volue1 =valor1.push(total);
     var volue3 =valor3.push(value);
     var qts = valor3.length;
    if(total > 0) {
-      digtela.splice(0);
+      arrayy.splice(0);
    }
 }
 
    function result(){
-      var total = digtela.reduce((total, numero) => total + numero, ) ;
+      var total = arrayy.reduce((total, numero) => total + numero, ) ;
       var volue2 =valor2.push(total);
       var verif = valor1.length;
     
@@ -66,7 +66,7 @@ function operacao(value){
          valor4.push(divisao);
          tela.value=valor4;
          if(total > 0) {
-            digtela.splice(0);
+           arrayy.splice(0);
           }  
 }
 if(valor4 > 1) {
@@ -75,25 +75,7 @@ if(valor4 > 1) {
    valor3.shift();  
    valor4.shift();
  }
-   } 
-   function apag(){
-      var apag = digtela.pop();
-      if(digtela.length <= 1){
-        
-         tela.value='0000000000';
-      }
-      else{
-         var total = digtela.reduce((total, numero) => total + numero, ) ;
-         tela.value=total;
-      }
-   }
-   
-   
-   
-   
-   
-   
-   console.log(digtela);
+   }console.log(arrayy);
 
   
    
