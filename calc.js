@@ -66,7 +66,7 @@ function operacao(value){
          valor4.push(divisao);
          tela.value=valor4;
          if(total > 0) {
-           arrayy.splice(0);
+            digtela.splice(0);
           }  
 }
 if(valor4 > 1) {
@@ -75,6 +75,8 @@ if(valor4 > 1) {
    valor3.shift();  
    valor4.shift();
  }
+   }
+
  function apag(){
    var apag = digtela.pop();
    if(digtela.length <= 1){
@@ -86,7 +88,8 @@ if(valor4 > 1) {
       tela.value=total;
    }
 }
-   }console.log(digtela);
+
+   console.log(digtela);
 
   
    
